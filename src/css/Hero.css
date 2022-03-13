@@ -1,11 +1,16 @@
 #hero {
-  margin-top: 200px;
+  margin-top: 0;
   max-width: 1000px;
   display: flex;
   justify-content: center;
   min-width: 300px;
   flex: 1 1 0px;
   gap: 5rem;
+}
+#hero_container{
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
 }
 
 #hero picture{
