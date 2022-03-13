@@ -1,0 +1,20 @@
+.Market {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  flex: 1 1 1;
+  max-height: 200px;
+  min-height: 200px;
+  min-width: 200px;
+  border-radius: 5px;
+  box-shadow: -4px -1px 5px rgb(172, 167, 167);
+}
+.Market h3{
+  font-size: 2rem;
+  margin: 0px;
+}
+.Market p{
+  font-size: 1rem;
+  font-weight: bold;
+}

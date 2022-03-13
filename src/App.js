@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './css/App.css';
+import {BrowserRouter as Router, Route, Routes, useParams} from 'react-router-dom'
+import NavBar from './components/NavBar';
+import Login from './Pages/Login';
+import Home from './Pages/Home';
+import ErrorPage from './Pages/ErrorPage';
+import Ranks from './Pages/Ranks'
+import MyProfile from './Pages/MyProfile';
+import SignUp from './Pages/SignUp';
+import Trade from './components/Trade';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  
+    return (
+      <Router>
+        <div className = "brybit">
+          <NavBar/>
+            <Routes>
+              <Route path = '/' element={<Home/>}/>
+              <Route path = '/login' element={<Login/>}/>
+              <Route path = '/ranks' element={<Ranks/>}/>
+              <Route path = '/myProfile' element={<MyProfile/>}/>
+              <Route path = '/signup' element = {<SignUp/>}/>
+              <Route path = '/trade' element = {<Trade/>}/>
+              <Route path = "*" element={<ErrorPage/>}/>
+            </Routes>
+          </div>
+      </Router>);
+  
 }
 
 export default App;
