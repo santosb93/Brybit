@@ -1,6 +1,5 @@
 #Markets{
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0;
   width: 100vw;
   height: 30rem;
   z-index: -1;
@@ -9,17 +8,10 @@
   align-items: center;
   gap: 20px;
   background-color: rgb(253, 241, 241);
+  margin-top: 0;
 }
 
-.Market {
-  text-align: center;
-  flex: 1 1 1;
-  max-height: 200px;
-  min-height: 200px;
-  min-width: 200px;
-  border-radius: 5px;
-  box-shadow: -4px -1px 5px rgb(172, 167, 167);
-}
+
 
 .Markets__container{
   display: flex;

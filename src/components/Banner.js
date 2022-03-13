@@ -3,11 +3,11 @@ import '../css/Banner.css'
 const Banner = () => {
   return (
     <section id = "Banner">
-        <div className = "card">
-          <h2>Top 10 Traders</h2>
-        </div>
+      <div className = "card">
+        <h2>Top 10 Traders</h2>
+      </div>
     </section>
   );
 };
 
-export default Banner;
+export default Banner;  

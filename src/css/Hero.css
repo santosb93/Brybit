@@ -1,14 +1,13 @@
 #hero {
-  margin: 150px;
+  margin-top: 200px;
   max-width: 1000px;
-  padding: 50px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   min-width: 300px;
   flex: 1 1 0px;
   gap: 5rem;
 }
+
 #hero picture{
   display: inline;
   flex: 1 1 0px;
@@ -66,6 +65,16 @@
   cursor: pointer;
   background-color: rgb(214, 181, 32);
   
+}
+.trade_button{
+  display:flex;
+  justify-content: center;
+}
+.trade_button button{
+  font-size: 5rem;
+  width: 40%;
+  min-height: 200px;
+  border-radius: 100px;
 }
 
 @media screen and (max-width: 700px) {

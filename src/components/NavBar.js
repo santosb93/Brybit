@@ -13,6 +13,9 @@ const NavBar = props => {
           <input placeholder = "Search"></input>
         </li>
         <li>
+          <a href="/trade">Trade</a>
+        </li>
+        <li>
           <a href="/ranks">Ranks</a>
         </li>
         <li>
