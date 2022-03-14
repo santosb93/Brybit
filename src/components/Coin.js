@@ -4,7 +4,6 @@ const Coin = ({title,price,changePercent}) => {
   // capitalize the first letter of the string
   title = title.charAt(0).toUpperCase() + title.slice(1);
   // make the % change two decimals long
-  console.log(price);
   const changePercentNum = parseFloat(changePercent).toFixed(2);
   // if the percent is less than 0 make it red, otherwise green
   const percentColor = () => {

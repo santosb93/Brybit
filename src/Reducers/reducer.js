@@ -13,10 +13,6 @@
 
 import * as types from '../constants/actionTypes';
 
-const initialState = {
-  isFetching: false,
-  marketList: []
-}
 
 const reducer = (state, action) => {
 
@@ -30,6 +26,12 @@ const reducer = (state, action) => {
     return{
       ...state,
       marketList: action.payload
+    }
+  }
+  case types.UPDATE_OHLC_COIN:{
+    return{
+      ...state,
+      ohlcCoin: action.payload
     }
 
   }
